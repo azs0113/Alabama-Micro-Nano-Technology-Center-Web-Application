@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Laboratory Website</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href="HCIcss/bootstrap.min.css" rel="stylesheet">
+	
+	<style type ="text/css">
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+} 
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 400px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
+  outline: 0;
+  background: #182429;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #a2bbc8;
+}
+	
+    	</style>
+	
+	
+</head>
+<body>
+	<div id="header">
+		<a href="index.html" class="logo"><img src="images/auburn.png" align ="left" style= "width:200px;left: 30px; height:80px;" alt=""></a>
+		<ul>
+			<li class="selected">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="ABOUT.html">About Us</a>
+			</li>
+			<li>
+				<a href="LOGINPAGE.html">Add Data</a> 
+			</li>
+			<li>
+				<a href="SEARCHDATA.html">Search Data</a>
+			</li>
+			<li>
+				<a href="VIEWDATA.php">View Data</a>
+			</li>
+		
+		</ul>
+	</div>
+
+ 
+
+                 
+		<div class="login-page">
+	
+		<div class="form">			
+					
+		<form id="qry-form" role="form" method="post" action="">
+
+			<input type="text" name="username" id="username" placeholder="username"/>
+			<input type="password" name="password" id="password" placeholder="password"/>
+      
+			<button type="button" value="Login" id="submit" class="btn btn-default" onclick="validate()" >Login</button>
+		
+		</form>
+		
+		</div>
+		
+		</div>
+        	</div> 
+
+
+
+        
+ 
+
+ 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <script src="bootstrap.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
